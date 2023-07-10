@@ -1,0 +1,6 @@
+framework module RxTextureSupport {
+  umbrella header "RxTextureSupport-umbrella.h"
+
+  export *
+  module * { export * }
+}

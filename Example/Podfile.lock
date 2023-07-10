@@ -1,0 +1,110 @@
+PODS:
+  - Descriptors (0.2.1):
+    - Descriptors/Core (= 0.2.1)
+  - Descriptors/Core (0.2.1)
+  - Differentiator (5.0.0)
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
+    - PINCache/Core
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.2)
+  - PINRemoteImage/Core (3.0.3):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.3):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.3):
+    - PINCache (~> 3.0.3)
+    - PINRemoteImage/Core
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - RxTextureSupport (0.1.0):
+    - RxDataSources (~> 5.0)
+    - RxSwift (~> 6.0)
+    - Texture
+    - TextureSwiftSupport
+  - Texture (3.1.0):
+    - Texture/AssetsLibrary (= 3.1.0)
+    - Texture/Core (= 3.1.0)
+    - Texture/MapKit (= 3.1.0)
+    - Texture/Photos (= 3.1.0)
+    - Texture/PINRemoteImage (= 3.1.0)
+    - Texture/Video (= 3.1.0)
+  - Texture/AssetsLibrary (3.1.0):
+    - Texture/Core
+  - Texture/Core (3.1.0)
+  - Texture/MapKit (3.1.0):
+    - Texture/Core
+  - Texture/Photos (3.1.0):
+    - Texture/Core
+  - Texture/PINRemoteImage (3.1.0):
+    - PINRemoteImage/iOS (~> 3.0.0)
+    - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (3.1.0):
+    - Texture/Core
+  - TextureSwiftSupport (3.19.0):
+    - Texture/Core (>= 3)
+    - TextureSwiftSupport/Components (= 3.19.0)
+    - TextureSwiftSupport/Experiments (= 3.19.0)
+    - TextureSwiftSupport/Extensions (= 3.19.0)
+    - TextureSwiftSupport/LayoutSpecBuilders (= 3.19.0)
+  - TextureSwiftSupport/Components (3.19.0):
+    - Descriptors (>= 0.2.1)
+    - Texture/Core (>= 3)
+    - TextureSwiftSupport/LayoutSpecBuilders
+  - TextureSwiftSupport/Experiments (3.19.0):
+    - Texture/Core (>= 3)
+  - TextureSwiftSupport/Extensions (3.19.0):
+    - Texture/Core (>= 3)
+  - TextureSwiftSupport/LayoutSpecBuilders (3.19.0):
+    - Texture/Core (>= 3)
+
+DEPENDENCIES:
+  - RxTextureSupport (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Descriptors
+    - Differentiator
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - Texture
+    - TextureSwiftSupport
+
+EXTERNAL SOURCES:
+  RxTextureSupport:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Descriptors: 44f9f316368c2815048b1062e0be49be59c1c696
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: daa34d4aa1d8449089be7d405b9d974abc4724c6
+  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  RxTextureSupport: 6aed51166f93320580d1e0801cf04843fbc2efac
+  Texture: 2e8ab2519452515f7f5a520f5a8f7e0a413abfa3
+  TextureSwiftSupport: 2de508abb74363be84f02721c5f0c273439963ee
+
+PODFILE CHECKSUM: 744577c31d1a00770a20937e6d00d4011cfb6eb5
+
+COCOAPODS: 1.12.1

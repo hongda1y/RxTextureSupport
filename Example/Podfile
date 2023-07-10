@@ -1,13 +1,21 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '13.0'
 
 target 'RxTextureSupport_Example' do
   pod 'RxTextureSupport', :path => '../'
+#  pod 'RxSwift', '~> 6.0'
+#  pod 'RxDataSources', '~> 5.0'
+#  pod 'Texture'
+#  pod 'TextureSwiftSupport'
+end
 
-  target 'RxTextureSupport_Tests' do
-    inherit! :search_paths
 
-    
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+      config.build_settings['CODE_SIGN_IDENTITY'] = ''
+    end
   end
 end

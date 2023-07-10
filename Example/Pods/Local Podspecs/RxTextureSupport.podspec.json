@@ -1,0 +1,36 @@
+{
+  "name": "RxTextureSupport",
+  "version": "0.1.0",
+  "summary": "RxTextureSupport : Texture with RxSwift",
+  "description": "Combination UI and Datasource for RxSwift (Texture)",
+  "homepage": "https://github.com/hongda1y/RxTextureSupport",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hongda1y": "daly.hong@gbstech.com.kh"
+  },
+  "source": {
+    "git": "https://github.com/hongda1y/RxTextureSupport.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "Sources/**/*",
+  "dependencies": {
+    "RxSwift": [
+      "~> 6.0"
+    ],
+    "RxDataSources": [
+      "~> 5.0"
+    ],
+    "Texture": [
+
+    ],
+    "TextureSwiftSupport": [
+
+    ]
+  }
+}

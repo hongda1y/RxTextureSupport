@@ -1,0 +1,6 @@
+framework module Descriptors {
+  umbrella header "Descriptors-umbrella.h"
+
+  export *
+  module * { export * }
+}
