@@ -7,41 +7,34 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'RxTextureSupport'
-  s.version          = '0.1.0'
-  s.summary          = 'RxTextureSupport : Texture with RxSwift'
+    s.name             = 'RxTextureSupport'
+    s.version          = '0.1.0'
+    s.summary          = 'RxTextureSupport : Texture with RxSwift'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
+    s.description      = <<-DESC
     Combination UI and Datasource for RxSwift (Texture)
-                       DESC
+    DESC
 
-  s.homepage         = 'https://github.com/hongda1y/RxTextureSupport'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hongda1y' => 'daly.hong@gbstech.com.kh' }
-  s.source           = { :git => 'https://github.com/hongda1y/RxTextureSupport.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+    s.homepage         = 'https://github.com/hongda1y/RxTextureSupport'
+    # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
+    s.author           = { 'hongda1y' => 'daly.hong@gbstech.com.kh' }
+    s.source           = { :git => 'https://github.com/hongda1y/RxTextureSupport.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '13.0'
+    s.ios.deployment_target = '13.0'
+    s.source_files = 'Sources/**/*'
+    s.swift_version    = '5.0'
 
-  s.source_files = 'Sources/**/*'
-  
-  # s.resource_bundles = {
-  #   'RxTextureSupport' => ['RxTextureSupport/Assets/*.png']
-  # }
+    # s.resource_bundles = {
+    #   'RxTextureSupport' => ['RxTextureSupport/Assets/*.png']
+    # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.dependency 'Differentiator', '~> 5.0'
     s.dependency 'RxSwift', '~> 6.0'
+    s.dependency 'RxCocoa', '~> 6.0'
     s.dependency 'RxDataSources', '~> 5.0'
     s.dependency 'Texture'
     s.dependency 'TextureSwiftSupport'
-    
+    s.dependency 'RxOptional'
+
 end

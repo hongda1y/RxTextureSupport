@@ -3,6 +3,8 @@ PODS:
     - Descriptors/Core (= 0.2.1)
   - Descriptors/Core (0.2.1)
   - Differentiator (5.0.0)
+  - ESPullToRefresh (2.9.3)
+  - Fakery (5.1.0)
   - PINCache (3.0.3):
     - PINCache/Arc-exception-safe (= 3.0.3)
     - PINCache/Core (= 3.0.3)
@@ -25,11 +27,17 @@ PODS:
     - Differentiator (~> 5.0)
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
+  - RxOptional (5.0.2):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
   - RxTextureSupport (0.1.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
     - RxDataSources (~> 5.0)
+    - RxOptional
     - RxSwift (~> 6.0)
     - Texture
     - TextureSwiftSupport
@@ -71,17 +79,22 @@ PODS:
     - Texture/Core (>= 3)
 
 DEPENDENCIES:
+  - ESPullToRefresh
+  - Fakery
   - RxTextureSupport (from `../`)
 
 SPEC REPOS:
   trunk:
     - Descriptors
     - Differentiator
+    - ESPullToRefresh
+    - Fakery
     - PINCache
     - PINOperation
     - PINRemoteImage
     - RxCocoa
     - RxDataSources
+    - RxOptional
     - RxRelay
     - RxSwift
     - Texture
@@ -94,17 +107,20 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Descriptors: 44f9f316368c2815048b1062e0be49be59c1c696
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  ESPullToRefresh: 0d68daa602b343c81753a1b95e09fd0bfcddfd40
+  Fakery: a90caff00ca5cacde6c161c3eafc72314a03d34d
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: daa34d4aa1d8449089be7d405b9d974abc4724c6
   PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxOptional: 3664964c96b69dd20c9cf78bdfe546615e26eca8
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
-  RxTextureSupport: 6aed51166f93320580d1e0801cf04843fbc2efac
+  RxTextureSupport: 37500d7814e7f21a73160b7292f52e1544679590
   Texture: 2e8ab2519452515f7f5a520f5a8f7e0a413abfa3
   TextureSwiftSupport: 2de508abb74363be84f02721c5f0c273439963ee
 
-PODFILE CHECKSUM: 744577c31d1a00770a20937e6d00d4011cfb6eb5
+PODFILE CHECKSUM: d21ff5b0d74aed8fc62011c9928d27a8e9ba6915
 
 COCOAPODS: 1.12.1

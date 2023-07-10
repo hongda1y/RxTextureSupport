@@ -13,6 +13,10 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		C37225F02A5BAC1A009A2174 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37225EF2A5BAC1A009A2174 /* MainViewController.swift */; };
+		C37225F32A5BACB8009A2174 /* UIContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37225F22A5BACB8009A2174 /* UIContent.swift */; };
+		C37225F52A5BADB8009A2174 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37225F42A5BADB8009A2174 /* User.swift */; };
+		C37225F82A5BADF5009A2174 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37225F72A5BADF5009A2174 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C37225EF2A5BAC1A009A2174 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C37225F22A5BACB8009A2174 /* UIContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIContent.swift; sourceTree = "<group>"; };
+		C37225F42A5BADB8009A2174 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C37225F72A5BADF5009A2174 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		C539C32CAE82DE87B030A9D3 /* Pods_RxTextureSupport_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTextureSupport_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD7C8D9F355CEC617884BB6 /* Pods_RxTextureSupport_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTextureSupport_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,6 +83,9 @@
 		607FACD21AFB9204008FA782 /* Example for RxTextureSupport */ = {
 			isa = PBXGroup;
 			children = (
+				C37225F62A5BADEB009A2174 /* ViewModel */,
+				C37225F12A5BACB0009A2174 /* Model */,
+				C37225EE2A5BAC0E009A2174 /* Controller */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -111,6 +122,31 @@
 				C539C32CAE82DE87B030A9D3 /* Pods_RxTextureSupport_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C37225EE2A5BAC0E009A2174 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C37225EF2A5BAC1A009A2174 /* MainViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C37225F12A5BACB0009A2174 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C37225F22A5BACB8009A2174 /* UIContent.swift */,
+				C37225F42A5BADB8009A2174 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C37225F62A5BADEB009A2174 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C37225F72A5BADF5009A2174 /* UserViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,11 +251,14 @@
 				"${PODS_ROOT}/Target Support Files/Pods-RxTextureSupport_Example/Pods-RxTextureSupport_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Descriptors/Descriptors.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTextureSupport/RxTextureSupport.framework",
@@ -230,11 +269,14 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Descriptors.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTextureSupport.framework",
@@ -253,8 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37225F02A5BAC1A009A2174 /* MainViewController.swift in Sources */,
+				C37225F82A5BADF5009A2174 /* UserViewModel.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				C37225F52A5BADB8009A2174 /* User.swift in Sources */,
+				C37225F32A5BACB8009A2174 /* UIContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

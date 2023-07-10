@@ -19,8 +19,15 @@
     "ios": "13.0"
   },
   "source_files": "Sources/**/*",
+  "swift_versions": "5.0",
   "dependencies": {
+    "Differentiator": [
+      "~> 5.0"
+    ],
     "RxSwift": [
+      "~> 6.0"
+    ],
+    "RxCocoa": [
       "~> 6.0"
     ],
     "RxDataSources": [
@@ -31,6 +38,10 @@
     ],
     "TextureSwiftSupport": [
 
+    ],
+    "RxOptional": [
+
     ]
-  }
+  },
+  "swift_version": "5.0"
 }

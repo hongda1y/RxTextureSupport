@@ -4,10 +4,8 @@ platform :ios, '13.0'
 
 target 'RxTextureSupport_Example' do
   pod 'RxTextureSupport', :path => '../'
-#  pod 'RxSwift', '~> 6.0'
-#  pod 'RxDataSources', '~> 5.0'
-#  pod 'Texture'
-#  pod 'TextureSwiftSupport'
+  pod 'Fakery'
+  pod 'ESPullToRefresh'
 end
 
 
